@@ -1,0 +1,25 @@
+--cpu=Cortex-M4.fp
+"stm32_ws2812b_test\startup_stm32f446xx.o"
+"stm32_ws2812b_test\main.o"
+"stm32_ws2812b_test\stm32f4xx_it.o"
+"stm32_ws2812b_test\stm32f4xx_hal_msp.o"
+"stm32_ws2812b_test\ws2812b_drv.o"
+"stm32_ws2812b_test\stm32f4xx_hal_tim.o"
+"stm32_ws2812b_test\stm32f4xx_hal_tim_ex.o"
+"stm32_ws2812b_test\stm32f4xx_hal_rcc.o"
+"stm32_ws2812b_test\stm32f4xx_hal_rcc_ex.o"
+"stm32_ws2812b_test\stm32f4xx_hal_flash.o"
+"stm32_ws2812b_test\stm32f4xx_hal_flash_ex.o"
+"stm32_ws2812b_test\stm32f4xx_hal_flash_ramfunc.o"
+"stm32_ws2812b_test\stm32f4xx_hal_gpio.o"
+"stm32_ws2812b_test\stm32f4xx_hal_dma_ex.o"
+"stm32_ws2812b_test\stm32f4xx_hal_dma.o"
+"stm32_ws2812b_test\stm32f4xx_hal_pwr.o"
+"stm32_ws2812b_test\stm32f4xx_hal_pwr_ex.o"
+"stm32_ws2812b_test\stm32f4xx_hal_cortex.o"
+"stm32_ws2812b_test\stm32f4xx_hal.o"
+"stm32_ws2812b_test\system_stm32f4xx.o"
+--library_type=microlib --strict --scatter "STM32_WS2812b_test\STM32_WS2812b_test.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "STM32_WS2812b_test.map" -o STM32_WS2812b_test\STM32_WS2812b_test.axf
